@@ -1,9 +1,9 @@
-import { Button } from "@/components/01-atoms/ui/button";
+import { HomeSection } from "@/components/04-templates";
 
 export default function Home() {
 	return (
 		<main className="flex flex-col items-center">
-			<Button>Click me</Button>
+			<HomeSection />
 		</main>
 	);
 }
