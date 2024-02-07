@@ -2,9 +2,9 @@ import { TheHeader, TheFooter } from "@/components/01-atoms";
 
 export const HomeSection = () => {
 	return (
-		<div>
+		<section className="flex w-full flex-col">
 			<TheHeader />
 			<TheFooter />
-		</div>
+		</section>
 	);
 };
