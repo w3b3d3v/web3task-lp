@@ -27,13 +27,15 @@ export const navBarMenu: NavBarMenuProps[] = [
 ];
 
 export const TheHeader = () => {
-	const { isMobile } = useScreenSize();
+	const { isMobile, isTablet } = useScreenSize();
 
 	return (
 		<header className={cn("flex w-full justify-center")}>
 			{!isMobile ? (
 				<div
-					className={cn("flex items-center justify-center md:gap-14 xl:gap-24")}
+					className={cn(
+						"flex h-[126px] items-center justify-center md:gap-14 lg:gap-[60px]  xl:w-[1336px] xl:gap-[78px]"
+					)}
 				>
 					<div className="flex items-center">
 						<Image
@@ -46,21 +48,28 @@ export const TheHeader = () => {
 							WEB<span className="text-[#00E1FF]">3</span>TASK
 						</p>
 					</div>
-					<div className="flex text-lg font-bold md:gap-4 xl:gap-10">
+					<div className="flex h-[80px] xl:px-[90px]">
 						{navBarMenu.map((menuItem, index) => (
-							<div key={index}>
-								<Link href={menuItem.href}>{menuItem.title}</Link>
+							<div key={index} className="flex items-center">
+								<Link
+									href={menuItem.href}
+									className="navbar-title flex h-[80px] flex-shrink items-center justify-center px-[16.69px] py-[30px] hover:opacity-60"
+								>
+									{menuItem.title}
+								</Link>
 							</div>
 						))}
 					</div>
 					<div className="flex flex-col">
-						<Button className="rounded-2xl bg-gradient-to-tr from-[#6100FF] to-[#00FFD1] px-5">
-							Open dAPP
-						</Button>
+						{isTablet ? (
+							<Button size={"sm"}>Open dApp</Button>
+						) : (
+							<Button>Open dApp</Button>
+						)}
 					</div>
 				</div>
 			) : (
-				<div className="flex w-full items-center justify-between">
+				<div className="flex h-[126px] w-full items-center justify-between">
 					<div className="flex items-center">
 						<Image
 							src={web3TaskLogo}
