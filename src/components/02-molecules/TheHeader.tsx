@@ -1,30 +1,11 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
 import Image from "next/image";
 import web3TaskLogo from "@/app/public/web3TaskLogo.png";
 import { useScreenSize } from "@/hooks/useScreenSize";
-import { Navbar } from "./Navbar";
 import Link from "next/link";
-
-enum NavbarMenuTitle {
-	HOME = "Home",
-	HOW_IT_WORKS = "How it Works",
-	ROADMAP = "Roadmap",
-	FAQ = "FAQ",
-}
-
-interface NavBarMenuProps {
-	title: NavbarMenuTitle;
-	href: string;
-}
-
-export const navBarMenu: NavBarMenuProps[] = [
-	{ title: NavbarMenuTitle.HOME, href: "/" },
-	{ title: NavbarMenuTitle.HOW_IT_WORKS, href: "/" },
-	{ title: NavbarMenuTitle.ROADMAP, href: "/" },
-	{ title: NavbarMenuTitle.FAQ, href: "/" },
-];
+import { Button, NavbarMobile } from "@/components/01-atoms";
+import { navBarMenu } from "@/lib/constants";
 
 export const TheHeader = () => {
 	const { isMobile, isTablet } = useScreenSize();
@@ -82,7 +63,7 @@ export const TheHeader = () => {
 						</p>
 					</div>
 					<div className="mr-4 ">
-						<Navbar />
+						<NavbarMobile />
 					</div>
 				</div>
 			)}
