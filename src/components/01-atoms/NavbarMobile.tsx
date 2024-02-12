@@ -1,10 +1,11 @@
+"use client";
 import { MenuIcon, X } from "lucide-react";
 import { useState } from "react";
-import { navBarMenu } from ".";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { navBarMenu } from "@/lib/constants";
 
-export const Navbar = () => {
+export const NavbarMobile = () => {
 	const [open, setOpen] = useState<boolean>(false);
 
 	return (
