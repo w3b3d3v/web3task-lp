@@ -2,6 +2,7 @@ import {
 	HeroSection,
 	PartnersSection,
 	WhyChooseUsSection,
+	HowItWorksSection,
 } from "@/components/04-templates";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
 			<HeroSection />
 			<PartnersSection />
 			<WhyChooseUsSection />
+			<HowItWorksSection />
 		</main>
 	);
 }
