@@ -1,4 +1,5 @@
 export * from "./CardChooseUsLayout";
+export * from "./CardHowItWorksLayout";
 export * from "./NavbarMobile";
 export * from "./TheFooter";
 export * from "./icons/ArrowIcon";
