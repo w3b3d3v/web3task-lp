@@ -3,6 +3,7 @@ import {
 	PartnersSection,
 	WhyChooseUsSection,
 	HowItWorksSection,
+	RoadmapSection,
 } from "@/components/04-templates";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 			<PartnersSection />
 			<WhyChooseUsSection />
 			<HowItWorksSection />
+			<RoadmapSection />
 		</main>
 	);
 }
