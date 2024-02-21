@@ -4,6 +4,7 @@ import {
 	WhyChooseUsSection,
 	HowItWorksSection,
 } from "@/components/04-templates";
+import { CardStats } from "@/components/02-molecules";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<HeroSection />
 			<PartnersSection />
 			<WhyChooseUsSection />
+			<CardStats />
 			<HowItWorksSection />
 		</main>
 	);
