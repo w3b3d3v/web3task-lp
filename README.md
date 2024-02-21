@@ -1,3 +1,3 @@
 # web3task-lp
 
-Landing page 
+Landing page Web3Task
