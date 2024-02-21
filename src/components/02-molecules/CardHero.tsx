@@ -2,7 +2,7 @@
 import { ArrowIcon, Button } from "@/components/01-atoms";
 import personIcon01 from "@/app/public/hero/personIcon01.png";
 import personIcon02 from "@/app/public/hero/personIcon02.png";
-import personIcon03 from "@/app/public/hero/PersonIcon03.png";
+import personIcon03 from "@/app/public/hero/personIcon03.png";
 import moneyIcon from "@/app/public/hero/moneyIcon.png";
 import clockIcon from "@/app/public/hero/clockIcon.png";
 import rocketIcon from "@/app/public/hero/rocketIcon.png";
