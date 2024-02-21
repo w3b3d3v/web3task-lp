@@ -3,6 +3,7 @@ import {
 	PartnersSection,
 	WhyChooseUsSection,
 	HowItWorksSection,
+	RoadmapSection,
 } from "@/components/04-templates";
 import { CardStats } from "@/components/02-molecules";
 
@@ -14,6 +15,7 @@ export default function Home() {
 			<WhyChooseUsSection />
 			<CardStats />
 			<HowItWorksSection />
+			<RoadmapSection />
 		</main>
 	);
 }
