@@ -20,8 +20,8 @@ export const CardStats = () => {
 		>
 			<div
 				className={cn([
-					"bottom-[0px] left-[-4px] flex h-[157px] items-end justify-end",
-					isMobile && "justfy-center flex h-[23px] w-full items-center",
+					"bottom-0 left-1 flex h-[157px] items-end justify-end",
+					isMobile && "flex h-[23px] w-full items-center justify-center",
 				])}
 			>
 				<Image
@@ -91,9 +91,8 @@ export const CardStats = () => {
 			</div>
 			<div
 				className={cn([
-					"right-[4px] top-[0px] flex h-[157px] items-start justify-end",
-					isMobile &&
-						"left-[4px] flex h-[23px] w-full items-start justify-start",
+					"right-1 top-0 flex h-[157px] items-start justify-end",
+					isMobile && "flex h-[23px] w-full items-center justify-center",
 				])}
 			>
 				<Image
