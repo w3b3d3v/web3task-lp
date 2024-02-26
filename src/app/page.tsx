@@ -5,7 +5,7 @@ import {
 	HowItWorksSection,
 	RoadmapSection,
 } from "@/components/04-templates";
-import { CardStats } from "@/components/02-molecules";
+import { CardStats } from "@/components/01-atoms";
 
 export default function Home() {
 	return (
@@ -13,7 +13,6 @@ export default function Home() {
 			<HeroSection />
 			<PartnersSection />
 			<WhyChooseUsSection />
-			<CardStats />
 			<HowItWorksSection />
 			<RoadmapSection />
 		</main>

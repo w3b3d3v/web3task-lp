@@ -6,7 +6,7 @@ import Link from "next/link";
 import ether from "@/app/public/ether.png";
 import bitcoin from "@/app/public/bitcoin.png";
 
-export const CardStats = () => {
+export const CardMetrics = () => {
 	const { isMobile } = useScreenSize();
 
 	return (
