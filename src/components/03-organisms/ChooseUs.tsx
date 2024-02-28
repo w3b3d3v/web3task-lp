@@ -29,9 +29,6 @@ export const ChooseUs = () => {
 				<div className="div flex justify-center xl:h-[587px]">
 					<CardsChooseUs />
 				</div>
-				<div className="flex ">
-					<CardMetrics />
-				</div>
 			</div>
 			<div
 				className={cn([
@@ -40,6 +37,9 @@ export const ChooseUs = () => {
 				])}
 			>
 				<LineSeparatorIcon />
+			</div>
+			<div className="flex items-center justify-center">
+				<CardMetrics />
 			</div>
 		</div>
 	);
