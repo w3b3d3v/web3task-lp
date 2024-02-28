@@ -1,3 +1,4 @@
+import { CardCallToAction } from "../components/02-molecules/CardCallToAction";
 import {
 	HeroSection,
 	PartnersSection,
@@ -14,6 +15,7 @@ export default function Home() {
 			<WhyChooseUsSection />
 			<HowItWorksSection />
 			<RoadmapSection />
+			<CardCallToAction />
 		</main>
 	);
 }
