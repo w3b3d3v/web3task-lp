@@ -7,7 +7,7 @@ import ether from "@/app/public/ether.png";
 import bitcoin from "@/app/public/bitcoin.png";
 
 export const CardMetrics = () => {
-	const { isMobile } = useScreenSize();
+	const { isMobile, isTablet } = useScreenSize();
 
 	return (
 		<div
@@ -36,6 +36,7 @@ export const CardMetrics = () => {
 				className={cn([
 					"flex h-[111.176px] w-[307.5px] flex-col items-center justify-center border-r",
 					isMobile && "border-0",
+					isTablet && "border-0",
 				])}
 			>
 				<div className="flex w-[62px] items-center justify-center">
@@ -51,6 +52,7 @@ export const CardMetrics = () => {
 				className={cn([
 					"flex h-[111.176px] w-[307.5px] flex-col items-center justify-center border-r",
 					isMobile && "border-0",
+					isTablet && "border-0",
 				])}
 			>
 				<div className="flex w-[62px] items-center justify-center">
@@ -66,6 +68,7 @@ export const CardMetrics = () => {
 				className={cn([
 					"flex h-[111.176px] w-[307.5px] flex-col items-center justify-center border-r",
 					isMobile && "border-0",
+					isTablet && "border-0",
 				])}
 			>
 				<div className="flex w-[6px] items-center justify-center">
