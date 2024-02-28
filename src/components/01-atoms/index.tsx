@@ -10,3 +10,4 @@ export * from "./icons/GlobeIcon";
 export * from "./icons/LineSeparatorIcon";
 export * from "./icons/SystemCodeIcon";
 export * from "./icons/UserCardIdIcon";
+export * from "./CardMetrics";
