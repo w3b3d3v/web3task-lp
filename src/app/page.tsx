@@ -5,6 +5,7 @@ import {
 	HowItWorksSection,
 	RoadmapSection,
 } from "@/components/04-templates";
+import { TheFooterSection } from "@/components/04-templates/TheFooterSection";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 			<WhyChooseUsSection />
 			<HowItWorksSection />
 			<RoadmapSection />
+			<TheFooterSection />
 		</main>
 	);
 }
