@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { LineSeparatorIcon } from "@/components/01-atoms";
+import { LineSeparatorIcon, CardMetrics } from "@/components/01-atoms";
 import { CardsChooseUs } from "@/components/02-molecules";
 import { useScreenSize } from "@/hooks/useScreenSize";
 
@@ -37,6 +37,9 @@ export const ChooseUs = () => {
 				])}
 			>
 				<LineSeparatorIcon />
+			</div>
+			<div className="flex items-center justify-center">
+				<CardMetrics />
 			</div>
 		</div>
 	);
