@@ -7,9 +7,9 @@ import { ArrowIcon, Button } from "@/components/01-atoms";
 import { useScreenSize } from "@/hooks/useScreenSize";
 
 export const CardCallToAction = () => {
-	const { isMobile, isTablet } = useScreenSize();
+	const { isMobile } = useScreenSize();
 	return (
-		<div className="relative flex h-[auto] w-full flex-col items-center">
+		<div className="relative flex h-full w-full flex-col items-center">
 			<div>
 				<Image
 					src={ctabg}
@@ -26,7 +26,7 @@ export const CardCallToAction = () => {
 			<div className="absolute right-[20%] top-[37px] flex h-[25px] w-[25px] md:right-[15%] md:h-[40px] md:w-[40px]">
 				<Image src={ethereum02} alt={"Ethereum Icon"} />
 			</div>
-			<div className="mt-[37px] flex w-[585px] flex-col items-center md:h-[192px]">
+			<div className="mt-[37px] flex flex-col items-center md:h-[192px] lg:w-[585px]">
 				<p className="flex text-[32px] font-bold leading-none text-white md:text-[96px]">
 					Let&#039;s start
 				</p>
@@ -38,20 +38,16 @@ export const CardCallToAction = () => {
 				{isMobile ? (
 					<Button size={"sm"}>
 						Open dApp
-						{
-							<div className="ml-1">
-								<ArrowIcon />
-							</div>
-						}
+						<div className="ml-1">
+							<ArrowIcon />
+						</div>
 					</Button>
 				) : (
 					<Button size={"lg"}>
 						Open dApp
-						{
-							<div className="ml-2">
-								<ArrowIcon />
-							</div>
-						}
+						<div className="ml-2">
+							<ArrowIcon />
+						</div>
 					</Button>
 				)}
 			</div>
