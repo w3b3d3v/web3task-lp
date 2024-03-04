@@ -6,32 +6,28 @@ const CardsTheFooterData = [
 	{
 		title: "Quick Link",
 		items: [
-			{ label: "About", link: "/about" },
-			{ label: "How it works", link: "/how-it-works" },
-			{ label: "Roadmap", link: "/roadmap" },
-			{ label: "FAQ", link: "/faq" },
+			{ label: "About", link: "/#" },
+			{ label: "How it works", link: "/#" },
+			{ label: "Roadmap", link: "/#" },
+			{ label: "FAQ", link: "/#" },
 		],
 	},
 	{
 		title: "Community",
 		items: [
-			{ label: "Documentation", link: "/documentation" },
-			{ label: "Web3Dev", link: "/web3dev" },
-			{ label: "LinkTree", link: "/linktree" },
-			{ label: "Contact", link: "/contact" },
+			{ label: "Documentation", link: "/#" },
+			{ label: "Web3Dev", link: "/#" },
+			{ label: "LinkTree", link: "/#" },
 		],
 	},
 ];
 
 export const CardsTheFooter = () => {
 	return (
-		<div className="grid gap-[20px] md:grid-cols-2">
+		<div className="grid grid-cols-2 gap-[60px] xl:gap-[20px]">
 			{CardsTheFooterData.map((card, index) => (
 				<div key={index}>
-					<CardTheFooterLayout
-						title={card.title}
-						items={card.items} // Passando os itens diretamente
-					/>
+					<CardTheFooterLayout title={card.title} items={card.items} />
 				</div>
 			))}
 		</div>
