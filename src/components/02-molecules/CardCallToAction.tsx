@@ -9,7 +9,7 @@ import { useScreenSize } from "@/hooks/useScreenSize";
 export const CardCallToAction = () => {
 	const { isMobile } = useScreenSize();
 	return (
-		<div className="relative flex h-full w-full flex-col items-center">
+		<div className="relative flex h-[302px] w-full flex-col items-center md:h-full">
 			<div>
 				<Image
 					src={ctabg}
@@ -18,23 +18,28 @@ export const CardCallToAction = () => {
 						position: "absolute",
 						left: 0,
 						top: 0,
+						height: 302,
 						zIndex: 1,
 						border: 1,
 					}}
 				/>
 			</div>
 			<div className="absolute right-[20%] top-[37px] flex h-[25px] w-[25px] md:right-[15%] md:h-[40px] md:w-[40px]">
-				<Image src={ethereum02} alt={"Ethereum Icon"} />
+				{isMobile ? (
+					<Image src={ethereum02} alt={"Ethereum Icon"} hidden={true} />
+				) : (
+					<Image src={ethereum02} alt={"Ethereum Icon"} />
+				)}
 			</div>
 			<div className="mt-[37px] flex flex-col items-center md:h-[192px] lg:w-[585px]">
-				<p className="flex text-[32px] font-bold leading-none text-white md:text-[96px]">
+				<p className="flex text-[50px] font-bold leading-none text-white md:text-[96px]">
 					Let&#039;s start
 				</p>
-				<p className=" flex bg-gradient-to-r from-violet-700 to-cyan-400 bg-clip-text text-[32px] font-bold text-transparent md:text-[96px] md:leading-[110px]">
+				<p className=" flex bg-gradient-to-r from-violet-700 to-cyan-400 bg-clip-text text-[50px] font-bold text-transparent md:text-[96px] md:leading-[110px]">
 					building
 				</p>
 			</div>
-			<div className="md:mt-[46px]">
+			<div className="mt-[46px]">
 				{isMobile ? (
 					<Button size={"sm"}>
 						Open dApp
@@ -52,7 +57,11 @@ export const CardCallToAction = () => {
 				)}
 			</div>
 			<div className="absolute bottom-[10%] left-[20%] flex h-[25px] w-[25px] md:left-[15%] md:h-[40px] md:w-[40px]">
-				<Image src={bitcoin01} alt={"Bitcoin Icon"} />
+				{isMobile ? (
+					<Image src={bitcoin01} alt={"Bitcoin Icon"} hidden={true} />
+				) : (
+					<Image src={bitcoin01} alt={"Bitcoin Icon"} />
+				)}
 			</div>
 		</div>
 	);
