@@ -24,7 +24,7 @@ const CardsTheFooterData = [
 
 export const CardsTheFooter = () => {
 	return (
-		<div className="grid grid-cols-2 gap-[60px] xl:gap-[20px]">
+		<div className="grid grid-cols-2 gap-[60px] md:gap-[20px]">
 			{CardsTheFooterData.map((card, index) => (
 				<div key={index}>
 					<CardTheFooterLayout title={card.title} items={card.items} />
