@@ -12,7 +12,7 @@ export const CardCallToAction = () => {
 		<div className="relative flex h-[302px] w-full flex-col items-center md:h-[470px]">
 			<div className="absolute w-full md:h-[470px] xl:w-full">
 				<Image
-					className="h-[302px] md:h-[470px]"
+					className="h-[302px] w-full md:h-[470px]"
 					src={ctabg}
 					alt={"ctabg"}
 					style={{

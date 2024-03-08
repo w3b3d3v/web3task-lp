@@ -10,7 +10,7 @@ export const TheFooter = () => {
 	return (
 		<div className="flex w-full flex-col md:h-[250px]">
 			<div className="flex w-full flex-col-reverse justify-between md:flex-row">
-				<div className=" mt-4 flex flex-col gap-4 md:mt-0">
+				<div className="mt-4 flex flex-col gap-4 md:mt-0">
 					<div className="flex items-start">
 						<Image src={web3tasklogo1} alt={"Web3Task"} />
 					</div>
