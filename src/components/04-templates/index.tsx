@@ -4,3 +4,4 @@ export * from "./HowItWorksSection";
 export * from "./PartnersSection";
 export * from "./RoadmapSection";
 export * from "./WhyChooseUsSection";
+export * from "./TheFooterSection";

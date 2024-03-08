@@ -12,7 +12,7 @@ export const CardMetrics = () => {
 	return (
 		<div
 			className={cn([
-				"flex flex-wrap  items-center justify-center gap-[24px] md:mx-[50px] lg:mx-[50px] lg:gap-[10px] xl:w-[1350px]",
+				"flex flex-wrap  items-center justify-center gap-[24px] md:mx-[50px] lg:mx-[40px] lg:gap-[10px] xl:w-[1350px]",
 				isMobile &&
 					"mx-[50px] mt-[50px] flex h-[680px] flex-col flex-wrap gap-[30px]",
 			])}

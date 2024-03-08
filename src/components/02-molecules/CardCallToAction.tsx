@@ -9,16 +9,16 @@ import { useScreenSize } from "@/hooks/useScreenSize";
 export const CardCallToAction = () => {
 	const { isMobile } = useScreenSize();
 	return (
-		<div className="relative flex h-[302px] w-full flex-col items-center md:h-full">
-			<div>
+		<div className="relative flex h-[302px] w-full flex-col items-center md:h-[470px]">
+			<div className="absolute w-full md:h-[470px] xl:w-full">
 				<Image
+					className="h-[302px] w-full md:h-[470px]"
 					src={ctabg}
 					alt={"ctabg"}
 					style={{
 						position: "absolute",
 						left: 0,
 						top: 0,
-						height: 302,
 						zIndex: 1,
 						border: 1,
 					}}
@@ -56,7 +56,7 @@ export const CardCallToAction = () => {
 					</Button>
 				)}
 			</div>
-			<div className="absolute bottom-[10%] left-[20%] flex h-[25px] w-[25px] md:left-[15%] md:h-[40px] md:w-[40px]">
+			<div className="absolute bottom-[132px] left-[20%] flex h-[25px] w-[25px] md:left-[15%] md:h-[40px] md:w-[40px]">
 				{isMobile ? (
 					<Image src={bitcoin01} alt={"Bitcoin Icon"} hidden={true} />
 				) : (
