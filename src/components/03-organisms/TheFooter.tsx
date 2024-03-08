@@ -8,10 +8,10 @@ import arrowUp from "@/app/public/the-footer/arrowUp.svg";
 
 export const TheFooter = () => {
 	return (
-		<div className="flex w-full flex-col md:h-[250px]">
+		<div className="flex w-full flex-col md:px-5">
 			<div className="flex w-full flex-col-reverse justify-between md:flex-row">
 				<div className="mt-4 flex flex-col gap-4 md:mt-0">
-					<div className="flex items-start">
+					<div className="flex items-center md:items-start">
 						<Image src={web3tasklogo1} alt={"Web3Task"} />
 					</div>
 					<div className="flex justify-center text-center text-[12px] font-normal text-[#B7B4BB] md:justify-normal md:text-start md:text-[18px]">
