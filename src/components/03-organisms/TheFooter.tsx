@@ -3,7 +3,7 @@ import { CardsTheFooter } from "@/components/02-molecules";
 import Image from "next/image";
 import web3tasklogo1 from "@/app/public/the-footer/web3tasklogo1.svg";
 import twiter from "@/app/public/the-footer/twiterIcon.png";
-import instagram from "@/app/public/the-footer/instagramIcon.png";
+import discord from "@/app/public/the-footer/discordIcon.png";
 import arrowUp from "@/app/public/the-footer/arrowUp.svg";
 
 export const TheFooter = () => {
@@ -28,8 +28,8 @@ export const TheFooter = () => {
 						/>
 						<Image
 							className="h-[20px] w-[25px] md:h-[24px] md:w-[30px]"
-							src={instagram}
-							alt={"Instagram Icon"}
+							src={discord}
+							alt={"Discord Icon"}
 						/>
 					</div>
 				</div>
