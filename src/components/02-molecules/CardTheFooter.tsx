@@ -1,5 +1,3 @@
-// CardsTheFooter.tsx
-import React from "react";
 import CardTheFooterLayout from "@/components/01-atoms/CardTheFooterLayout";
 
 const CardsTheFooterData = [
