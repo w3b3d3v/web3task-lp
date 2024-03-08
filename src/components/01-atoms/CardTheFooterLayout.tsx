@@ -19,7 +19,7 @@ const CardTheFooterLayout = ({ title, items }: CardTheFooterProps) => {
 				</div>
 				{items.map((item, index) => (
 					<a
-						className="text-[12px] md:text-[18px]"
+						className="text-[12px] text-[#B7B4BB] md:text-[18px]"
 						key={index}
 						href={item.link}
 					>
