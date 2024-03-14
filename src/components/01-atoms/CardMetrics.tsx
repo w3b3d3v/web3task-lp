@@ -14,9 +14,9 @@ export const CardMetrics = () => {
 			className={cn([
 				"flex flex-wrap  items-center justify-center gap-[24px] md:mx-[50px] lg:mx-[40px] lg:gap-[10px] xl:w-[1350px]",
 				isMobile &&
-					"mx-[50px] mt-[50px] flex h-[680px] flex-col flex-wrap gap-[30px]",
+					"mx-[50px] mt-[10px] flex h-[680px] flex-col flex-wrap gap-[30px]",
 			])}
-			style={{ marginBottom: "187px" }}
+			style={{ marginBottom: "100px" }}
 		>
 			<div
 				className={cn([

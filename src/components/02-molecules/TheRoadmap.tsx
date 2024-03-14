@@ -5,7 +5,7 @@ import { LineSeparatorIcon } from "@/components/01-atoms";
 export const TheRoadmap = () => {
 	return (
 		<div className="flex flex-col items-center justify-center">
-			<div className="div mb-[100px] mt-[150px] flex justify-center">
+			<div className="div mb-[100px] mt-[100px] flex justify-center">
 				<LineSeparatorIcon />
 			</div>
 			<div>
@@ -19,7 +19,7 @@ export const TheRoadmap = () => {
 			<div>
 				<Image src={roadmap} alt={"roadmap"} />
 			</div>
-			<div className="div mb-[100px] mt-[150px] flex justify-center">
+			<div className="div mb-[100px] mt-[100px] flex justify-center">
 				<LineSeparatorIcon />
 			</div>
 		</div>

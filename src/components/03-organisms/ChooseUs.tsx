@@ -9,7 +9,7 @@ export const ChooseUs = () => {
 
 	return (
 		<div>
-			<div className="div mb-[100px] mt-[190px] flex justify-center">
+			<div className="div mb-[100px] mt-[100px] flex justify-center">
 				<LineSeparatorIcon />
 			</div>
 			<div
@@ -32,7 +32,7 @@ export const ChooseUs = () => {
 			</div>
 			<div
 				className={cn([
-					"div mb-[150px] flex justify-center sm:mt-[100px] lg:mt-0",
+					"div mb-[100px] flex justify-center sm:mt-[100px] lg:mt-0",
 					{ "mt-[100px]": isMobile },
 				])}
 			>
