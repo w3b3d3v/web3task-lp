@@ -9,6 +9,8 @@ import thinkDev from "@/app/public/partners/thinkDev.png";
 import web3dev from "@/app/public/partners/web3dev.png";
 import { useScreenSize } from "@/hooks/useScreenSize";
 import { cn } from "@/lib/utils";
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
 import {
 	Carousel,
 	CarouselContent,
@@ -17,7 +19,9 @@ import {
 
 export const CardPartners = () => {
 	const { isMobile } = useScreenSize();
-
+	const plugin = React.useRef(
+		Autoplay({ delay: 2000, stopOnInteraction: true })
+	);
 	return (
 		<div
 			className={cn([
@@ -26,7 +30,16 @@ export const CardPartners = () => {
 			])}
 		>
 			{isMobile ? (
-				<Carousel>
+				<Carousel
+					opts={{
+						align: "start",
+						loop: true,
+					}}
+					plugins={[plugin.current]}
+					className="w-full max-w-xs"
+					onMouseEnter={plugin.current.stop}
+					onMouseLeave={plugin.current.reset}
+				>
 					<CarouselContent>
 						<CarouselItem className="basis-1/3">
 							<div className="div flex h-[76px] items-center ">
