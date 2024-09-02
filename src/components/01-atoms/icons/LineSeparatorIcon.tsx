@@ -22,9 +22,9 @@ export const LineSeparatorIcon = (props: SVGProps<SVGSVGElement>) => (
 				y2="27.4317"
 				gradientUnits="userSpaceOnUse"
 			>
-				<stop stop-color="#00F0FF" />
-				<stop offset="0.482483" stop-color="#5200FF" />
-				<stop offset="1" stop-color="#FF2DF7" />
+				<stop stopColor="#00F0FF" />
+				<stop offset="0.482483" stopColor="#5200FF" />
+				<stop offset="1" stopColor="#FF2DF7" />
 			</linearGradient>
 		</defs>
 	</svg>
